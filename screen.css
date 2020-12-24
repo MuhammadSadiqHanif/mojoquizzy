@@ -1,25 +1,25 @@
 /* toggle classses */
 
-.toggle-None{
+.toggle-None {
     display: none !important;
 }
-.toggle-Block{
+.toggle-Block {
     display: block !important;
 }
-.toggle-flex{
+.toggle-flex {
     display: flex !important;
 }
 /*  */
-
+* {
+    font-family: "Nunito", sans-serif;
+}
 
 .main {
-  
     height: 100vh;
-  
+
     align-items: center;
     justify-content: center;
     background-color: #284fa6;
-
 }
 .main .screen1div {
     height: 50vh;
@@ -77,7 +77,6 @@
     align-items: center;
     justify-content: center;
     background-color: #516aa2;
-
 }
 .screen2 {
     height: 100vh;
