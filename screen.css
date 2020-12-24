@@ -1,11 +1,28 @@
+/* toggle classses */
+
+.toggle-None{
+    display: none !important;
+}
+.toggle-Block{
+    display: block !important;
+}
+.toggle-flex{
+    display: flex !important;
+}
+/*  */
+
+
 .main {
-    /* background-color: #1313a0; */
+  
     height: 100vh;
-    display: flex;
+  
     align-items: center;
     justify-content: center;
     background-color: #284fa6;
-    display: none;
+
+}
+.main .screen1div {
+    height: 50vh;
 }
 
 .ScanTextDiv {
@@ -19,13 +36,13 @@
     text-align: center;
 }
 .ScanText h1 {
-    font-size: 60px;
+    font-size: 84px;
 }
 .ScanText h4 {
-    font-size: 40px;
+    font-size: 54px;
 }
 .ScanText p {
-    font-size: 17px;
+    font-size: 24px;
 }
 .imgDiv {
     display: flex;
@@ -57,11 +74,10 @@
 } */
 .main2 {
     height: 100vh;
-    display: flex;
     align-items: center;
     justify-content: center;
     background-color: #516aa2;
-    /* display: none; */
+
 }
 .screen2 {
     height: 100vh;
@@ -132,7 +148,7 @@
     font-size: 24px;
 }
 .quizBody .quizAns {
-    display: none;
+    /* display: none; */
 }
 .quizBody .quizAns ul {
     color: white;
@@ -161,7 +177,7 @@
     margin: 0px;
 }
 .commentBox {
-    display: flex;
+    /* display: flex; */
     align-items: center;
     justify-content: center;
     padding: 10px 10px;
@@ -185,19 +201,34 @@
     border-width: 0px;
     border-bottom-right-radius: 5px;
 }
+@media screen and (max-width: 1000px) {
+    .screen1 {
+        flex-direction: column-reverse;
+    }
+}
 
 @media screen and (max-width: 767px) {
     .none {
         /* display: none; */
     }
-    .screen1 {
-        flex-direction: column-reverse;
-    }
+
     .chatBody .header {
         /* background-color: #516aa2; */
         padding: 0px 10px;
     }
     .screen2 {
         width: 100%;
+    }
+    .ScanText {
+        margin-top: 30px;
+    }
+    .ScanText h1 {
+        font-size: 40px;
+    }
+    .ScanText h4 {
+        font-size: 30px;
+    }
+    .ScanText p {
+        font-size: 15px;
     }
 }
